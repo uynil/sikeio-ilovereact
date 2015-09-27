@@ -62,11 +62,11 @@ a:hover {
 }
 
 /*second section*/
-.flexrow {
+.flex-row {
   flex-direction: row;
 }
 
-.full {
+.flex-full {
   align-self: stretch;
   flex: 1 1 0;
 }
