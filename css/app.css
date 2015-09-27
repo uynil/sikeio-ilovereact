@@ -47,8 +47,9 @@ a:hover {
 
 .red {
   /* This is the only item that's `flex-start` */
-  align-self: center;
+  align-self: flex-start;
 }
+
 
 
 .section {
@@ -59,3 +60,21 @@ a:hover {
 .navitem {
   padding: 10px;
 }
+
+/*second section*/
+.flexrow {
+  flex-direction: row;
+}
+
+.full {
+  align-self: stretch;
+  flex: 1 1 0;
+}
+.iphone-demo {
+  flex-grow: 1 ;
+}
+
+.feature-description {
+  flex-grow: 1 ;
+}
+
