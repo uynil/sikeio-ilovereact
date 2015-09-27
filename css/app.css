@@ -1,0 +1,61 @@
+/* css/app.css */
+@import "../node_modules/normalize.css/normalize.css";
+
+body {
+  background-color: #1F1E34;
+  color: #FFF;
+  font-family: "Avenir Next",
+      "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+      Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  display: flex;
+}
+
+
+h1 {
+  font-size: 64px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+p {
+  font-size: 24px;
+}
+
+a {
+  font-weight: 400;
+  color: #FFF;
+}
+
+a:hover {
+  font-weight: 400;
+  color: #DADADA;
+  text-decoration: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.red {
+  /* This is the only item that's `flex-start` */
+  align-self: center;
+}
+
+
+.section {
+  border: 2px solid #FFF;
+  height: 800px;
+}
+/*nav*/
+.navitem {
+  padding: 10px;
+}
