@@ -19,13 +19,14 @@
     <link rel="stylesheet" href="css/app.css">
     <!-- script -->
     <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
 
 </head>
 <body>
   <div class="container">
-    <div class="zindex10" id="slider-control">
-      <a class="active">
+    <div class="zindex20" id="slider-control">
+      <a href="#intro-section" class="active">
         <div class="dot"></div>
       </a>
 
@@ -54,8 +55,8 @@
               Touch Handling
             </a>
 
-            <a class="navitem" href="#async">
-              Asynchronous
+            <a class="navitem" href="#android">
+              Android
             </a>
 
             <a class="navitem" href="#flex">
@@ -96,7 +97,7 @@
           </p>
         </div>
     </section>
-    <section class="section container">
+    <section id="android" class="section container">
         <h1>Android Is Coming</h1>
         <img id="android-robot" class="zindex-1" src="img/android-robot.svg"/>
     </section>
