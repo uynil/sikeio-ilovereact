@@ -44,10 +44,7 @@ function scrollToElement(element) {
   var topOfElement = element.offsetTop;
 
   TweenMax.to(window,1,{
-    scrollTo: {
-      y: topOfElement,
-    },
-
+    scrollTo: { y: topOfElement },
     ease: Power2.easeInOut,
   });
 }
@@ -75,8 +72,6 @@ function addSmoothScrolling() {
   addSmoothScrollingtoElement(links);
   navs = document.querySelectorAll("#navbar a");
   addSmoothScrollingtoElement(navs);
-
-  
 }
 
 window.onscroll = function() {
