@@ -16,7 +16,10 @@
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
-    <link rel="stylesheet" href="bundle/app.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- script -->
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
 
 </head>
 <body>
@@ -40,7 +43,7 @@
     </div>
     <section id="intro-section" class='section container'>
         <div class="overlay"></div>
-        <img class="react-logo zindex10" src="img/react-logo.svg"/>
+        <img id="logo" class="react-logo zindex10" src="img/react-logo.svg"/>
         <h1 class="zindex10" id="slogan">Build Native Apps With React</h1>
         <nav class="zindex10" id="navbar">
             <a class="navitem" href="#native">
@@ -95,7 +98,7 @@
     </section>
     <section class="section container">
         <h1>Android Is Coming</h1>
-        <img id="android-robot" src="img/android-robot.svg"/>
+        <img id="android-robot" class="zindex-1" src="img/android-robot.svg"/>
     </section>
   </div>
 
