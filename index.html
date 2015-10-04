@@ -21,6 +21,8 @@
     <script type="text/javascript" src="javascripts/TweenMax.js"></script>
     <script type="text/javascript" src="javascripts/ScrollToPlugin.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
+    <script src="node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
 
 </head>
 <body>
@@ -44,6 +46,7 @@
     </div>
     <section id="intro-section" class='section container'>
         <div class="overlay"></div>
+        <div class="overlay-scroll"></div>
         <img id="logo" class="react-logo zindex10" src="img/react-logo.svg"/>
         <h1 class="zindex10" id="slogan">Build Native Apps With React</h1>
         <nav class="zindex10" id="navbar">
@@ -64,14 +67,16 @@
             </a>
         </nav>
     </section>
-    <section id="native" class="section container flex-row ">
-        <div class="iphone-demo flex-full container">
+    <section id="iphone-overlay" class="section container">
+      <div class="iphone-demo flex-full container">
             <div>
                 <img src="img/iphone-frame.svg"/>
                 <img id="tumblr-demo" src="img/tumblr-demo.jpg"/>
             </div>
           
         </div>
+    </section>
+    <section id="native" class="section container flex-row ">
 
         <div class="feature-description flex-full container">
             <h2>Native Experience</h2>
@@ -81,13 +86,6 @@
         </div>
     </section>
     <section id="touch" class="section container flex-row">
-        <div class="iphone-demo flex-full container" >
-            <div>
-              <img src="img/iphone-frame.svg"/>
-              <img id="swype-demo" src="img/swype-demo.jpg"/>
-            </div>
-        </div>
-
         <div class="feature-description flex-full container">
           <h2>Touches &amp; Gestures</h2>
           <p>

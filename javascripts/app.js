@@ -1,17 +1,12 @@
 function animateLogo(){
     TweenMax.fromTo("#logo",2,{
-        css:{
-            // position: 'relative',
-            y: "-50px",
-        } },{
-        css: {
-            // position: 'relative',
-            y: "0px",
-        },
-        repeat: -1,
-        yoyo: true,
-        ease: Power2.easeInOut,
-    });
+            css:{y: "-50px", },
+        },{
+            css: {y: "0px", },
+            repeat: -1,
+            yoyo: true,
+            ease: Power2.easeInOut,
+        });
 
 }
 function animateRobot() {
@@ -67,6 +62,41 @@ function addSmoothScrollingtoElement(elementLinks){
     }
 }
 
+function animateTranslateIphone(){
+    var controller = new ScrollMagic.Controller();
+
+    var scrollOverlay = new ScrollMagic.Scene({
+        triggerElement: '#native',
+        triggerHook: 'onEnter',
+        duration: '100%'
+    })
+    .setTween('#intro-section .overlay-scroll', {
+        opacity: 1
+    })
+    .addTo(controller);
+
+    var scrollIphoneOverlay = new ScrollMagic.Scene({
+        triggerElement: '#native',
+        triggerHook: 'onEnter',
+        duration: '100%'
+    })
+    .setTween('#iphone-overlay', 2,{
+        css:{width: "50%", y:0 },
+    })
+    .addTo(controller);
+    
+    var pinIphoneOverlay = new ScrollMagic.Scene({
+        triggerElement: '#native',
+        triggerHook: 'onLeave',
+        duration: '100%'
+    })
+    .setPin('#iphone-overlay')
+    .addTo(controller);
+
+}
+
+
+
 function addSmoothScrolling() {
   var links = document.querySelectorAll("#slider-control a");
   addSmoothScrollingtoElement(links);
@@ -75,7 +105,6 @@ function addSmoothScrolling() {
 }
 
 window.onscroll = function() {
-  // ...
   updateSliderControl();
 }
 
@@ -84,4 +113,6 @@ window.onload = function() {
     animateRobot();
     updateSliderControl();
     addSmoothScrolling();
+    animateTranslateIphone();
+
 };
